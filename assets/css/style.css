@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 9px; 
+    
+    }
+    body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.979);
+
+    }
+    body::-webkit-scrollbar-thumb {
+    background: #9D9D9D;
+    border-radius: 20px; 
+    border: 3px solid #9D9D9D; 
+    opacity: 0.7;
+    }
+
+
+/* container */
+
+.container {
+    width: 100%;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+    background-color: rgba(36, 36, 36,0.95);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #9D9D9D;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #9D9D9D;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro/1.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-size: 72px;
+    font-family: 'Kaushan Script',
+     cursive;
+}
+
+.intro__title {
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 60px auto;
+}
+
+ /* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:  .2s linear, color .2s linear;
+}
+
+.btn:hover {
+    background: rgba(36, 36, 36,0.95);
+    color: #fff;
+}
+
+
+/* section */
+
+.section {
+    padding: 80px 0;
+    color: #333;
+    background-color: #fff;
+
+}
+
+.section--devices {
+    background: url("../images/devices-bg_2.jpg")
+    center no-repeat;
+    background-size: cover;
+}
+
+
+
+.section__header {
+    text-align: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    color: #000;
+}
+
+
+.section__suptitle {
+    font-family: 'Kaushan Script',
+    cursive;
+    font-size: 24px;
+}
+
+.section__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 25px auto;
+}
+
+.section_text{
+    font-size: 30px;
+}
+
+/* about */
+
+.about {
+    margin-top: 80px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.about__item {
+    background-color: #2b2b2b;
+    position: relative;
+    width: 32%;
+}
+
+.about__item:hover  .about__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+.about__item:hover  .about__img img{
+    opacity: .5;
+}
+
+.about__item:hover .about__text {
+    opacity: 1;
+}
+
+.about__img {
+    width: 100%;
+    transition: transform .2s linear;
+}
+
+.background__1 {
+    background: linear-gradient(to bottom,
+    #000000, rgb(0, 0, 0));
+}
+
+.background__2 {
+    background: linear-gradient(to bottom,
+    #000000, rgb(0, 0, 0));
+}
+
+.background__3 {
+    background: linear-gradient(to bottom,
+    #000000, rgb(0, 0, 0));
+}
+
+.about__img img {
+    transition: opacity .1s linear;
+}
+
+.img__width {
+    display: block;
+    width: 100%;
+}
+
+.about__text {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+/* statistics */
+
+.statistics {
+    background-color: #2b2b2b;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    border-left: 1px solid #4f4e5e;
+    text-align: center;
+    color: #fff;
+}
+
+.stat__item:last-child {
+    border-right: 1px solid #4f4e5e;
+}
+
+.stat__number {
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* services */
+
+.services {
+    display: flex;
+}
+
+.services__item {
+    flex: 1 1 0;
+    padding-left: 80px;
+    position: relative;
+    padding-right: 35px;
+}
+
+.services__icon {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+}
+
+.services__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services__text {
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+
+/*all*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* btn */
+
+
+.buttons_main { 
+    text-align: center;
+}
+
+.btn_main {
+   font-size: 30px;
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.95);
+}
+
+
+
+
+
+/* footer */
+
+
+.page {
+    overflow: hidden;
+    display: flex;
+    min-width: 100%;
+}
+
+.footer {
+    padding: 2%;
+    background-color: rgba(36, 36, 36,0.95);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Kaushan Script',
+    cursive;
+}
+
+.footer__dop__text{
+    color: #fff;
+    text-align: center;
+}
+
+.footer__icons {
+    text-align: center;
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer__link {
+    color: #fff;
+}
+
+
+.footer__links {
+    text-align: right;
+    color: #fff;
+}
